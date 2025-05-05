@@ -1,0 +1,18 @@
+### Get all runs
+GET http://localhost:3032/api/runs
+
+### Get a specific run by ID
+GET http://localhost:3032/api/runs/1
+
+### Create a new run
+POST http://localhost:3032/api/runs
+Content-Type: application/json
+
+{
+  "Id": 123,
+  "name": "Morning Run",
+  "km": 5,
+  "startedOn": "2023-10-01T06:00:00",
+  "endedOn": "2023-10-01T06:30:00",
+  "location": "OUTDOOR"
+}
